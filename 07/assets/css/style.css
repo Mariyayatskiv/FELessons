@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol, 
+ul {
+    list-style: none;
+}
+
+header nav ul {
+    text-align: right;
+}
+
+header nav li {
+    display: inline-block;
+    /* margin-right: 40px; */
+}
+
+header nav li + li {
+    margin-left: 40px;
+}
+
+a {
+    color: blue;
+}
+
+a:hover {
+    color: pink;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:link {
+    color: blue;
+}
+
+a:focus {
+    color: black;
+}
+
+a:active {
+    color: olive
+}
+
+a:focus:active {
+    color: green;
+}
+
+input + label,
+input + span {
+    color: black;
+}
+
+input:checked + label,
+input:checked + span {
+    color: red;
+}
