@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.block {
+    display: grid;
+    /* height: 1000px; */
+    margin: 100px;
+    border: 2px solid #000;
+    width: 500px;
+    background-color: aliceblue;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 100px);
+
+    grid-template-areas: 
+        "item-1 item-1 item-1 item-1 item-1" 
+        "item-2 item-2 . . ."
+        ". . item-3 item-3 ."
+        ". . item-3 item-3 .";
+}
+
+.item-1 {
+    background-color: red;
+    grid-area: item-1;
+}
+
+.item-2 {
+    background-color: pink;
+    grid-area: item-2;
+}
+
+.item-3 {
+    background-color: purple;
+    grid-area: item-3;
+}
+
+.wrapper {
+    height: 40px;
+    background: linear-gradient(270deg, #241F24 1.04%, rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0) 12.29%);
+}

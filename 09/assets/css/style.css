@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+root {
+    --enable-grid-classes: false;
+    --enable-cssgrid: true
+}
+
+.block {
+    display: flex;
+    background-color: aliceblue;
+    height: 500px;
+
+    flex: 1 1 50%;
+    /* width: 1000px; */
+    /* flex: 0 0 0; */
+    /* flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 50%; */
+}
+
+.item {
+    padding: 20px;
+    height: 100px;
+    width: 25%;
+}
+
+.item:first-child {
+    background-color: red;
+
+    /* flex: 1 1 50%; */
+
+    /* flex-grow: 1.1;
+    flex-shrink: 0.5;
+    flex-basis: 50%; */
+}
+
+.item:nth-child(2) {
+    background-color: green;
+    /* flex-basis: 25% */
+}
+
+.item:nth-child(3) {
+    background-color: purple;
+    /* flex-basis: 25% */
+}

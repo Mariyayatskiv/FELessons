@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.is-required {
+    border-color: red;
+}
+
+.is-available {
+
+}
+
+.is-visible {
+    display: block;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+
+.block-grid {
+    display: grid;
+}
+
+.block-grid--gap-30 {
+    gap: 30px;
+}
+
+.block-grid--template-columns-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.block-grid--template-rows-3 {
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.architectural-photography {
+    margin: 120px 0;
+}
+
+.architectural-photography__title {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.img-card {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.architectural-photography__image {
+    height: 400px;
+}
+
+.architectural-photography__column--column-2-4 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.menu__link--text-underline {
+    text-decoration: underline;
+}
+
+.menu__item .menu__link {
+    color: red;
+}
+
+.architectural-photography__column:nth-child(2) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.icon {
+    background: #000;
+}
+
+.icon .icon__image--twitter-blue {
+    display: block;
+}
+
+.icon .icon__image--twitter-white {
+    display: none;
+}
+
+.icon:hover .icon__image--twitter-blue {
+    display: none;
+}
+
+.icon:hover .icon__image--twitter-white {
+    display: block;
+}
