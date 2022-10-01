@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --light-blue: #1565D8
+}
+
+.svg-rect .svg-rect__el {
+    fill: red;
+    stroke: blue;
+    stroke-width: 4;
+}
+
+
+.rect-div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+svg text {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.animation-svg {
+    width: 100px;
+    fill: red;
+}
+
+.animation-svg:hover {
+    fill: purple;
+}
+
+.path-1 {
+    stroke: var(--light-blue)
+}
+
+.svg-1:hover .path-1 {
+    stroke: red
+}

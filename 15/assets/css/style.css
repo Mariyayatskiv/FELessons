@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #000;
+    --red: red;
+}
+
+body {
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--black);
+}
+
+a {
+    display: inline-block;
+}
+
+.link {
+    opacity: 0.5;
+    color: var(--black);
+    /* transition-property: color, opacity;
+    transition-duration: .3s;
+    transition-timing-function: linear; */
+    transition: color .3s ease;
+    
+}
+
+.link:hover {
+    opacity: 1;
+    color: var(--red);
+}
+
+.button {
+    padding: 8px 13px;
+    background-color: var(--red);
+    color: var(--black);
+    border-radius: 5px;
+    border: 2px solid transparent;
+}
+
+.button--animation {
+    transition: all .3s linear;
+}
+
+.button--animation:hover {
+    color: var(--red);
+    background-color: var(--black);
+    border-radius: 20px;
+    border-color: green;
+    padding: 18px 23px;
+}
+
+.button--scale {
+    transform: scale(1);
+    transition: transform .3s linear;
+}
+
+.main {
+    display: inline-block;
+    width: 133px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.main:hover .button--scale {
+    transform: scale(2)
+}
+
+.button--transform {
+    height: 100px;
+    width: 100px;
+    padding: 0;
+    transition: transform .3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.button__span {
+    display: block;
+    transition: opacity, transform .3s ease;
+    backface-visibility: hidden;
+}
+
+.button__span:first-child {
+    position: absolute;
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.button__span:last-child {
+    position: absolute;
+    opacity: 1;
+    transform: translateX(0)
+}
+
+.button--transform:hover .button__span:first-child {
+    opacity: 1;
+    transform: translateX(0)
+}
+
+.button--transform:hover .button__span:last-child {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+.button--rotate {
+    transform: rotateY(0);
+    animation: rotateButton 3s infinite 4s;
+}
+
+.section {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.section .button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 200px;
+    width: 400px;
+}
+
+@keyframes rotateButton {
+    0% {
+        transform: rotateY(0);
+    }
+
+    50% {
+        transform: rotateY(180deg);
+    }
+
+    100% {
+        transform: rotateY(0);
+    }
+}

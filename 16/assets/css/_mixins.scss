@@ -1,0 +1,9 @@
+@mixin container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@mixin flex-verticle-center {
+    display: flex;
+    align-items: center;
+}

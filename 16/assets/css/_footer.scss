@@ -1,0 +1,21 @@
+.footer {
+    &__container {
+        @include container;
+    }
+
+    // .footer__menu
+    &__menu {
+        .menu__item {
+            display: block;
+            margin: 0 0 15px 0;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            // & + .menu__item {
+            //     margin: 0 0 15px 0;
+            // }
+        }
+    }
+}
