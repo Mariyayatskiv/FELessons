@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 19</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="body">
+    <main>
+        <form class="form" method="" action="" autocomplete="off" accept="multipart/form-data">
+            <div class="input-field">
+                <label class="input-field__label">
+                    Name
+                </label>
+                <div class="input-field__wrapper input-field__wrapper--after">
+                    <input class="input-field__input input-field__input--with-left" name="firstName" type="text" placeholder="Enter here your name">
+                </div>
+            </div>
+
+            <div class="input-field">
+                <label class="input-field__label">
+                    Surname
+                </label>
+                <div class="input-field__wrapper input-field__wrapper--svg">
+                    <input class="input-field__input" name="surName" type="text" placeholder="Enter here your surname">
+
+                    <span class="input-field__icon">
+                        <svg width="35" height="36" viewBox="0 0 35 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.5" width="35" height="35" rx="10" fill="#FF9900"/>
+                            <path d="M26.8767 12.7393C26.5423 12.4202 26.0001 12.4202 25.6656 12.7393L19.3494 18.7652C17.142 20.8712 13.6694 20.8712 11.4619 18.7653C11.1275 18.4462 10.5853 18.4462 10.2508 18.7653C9.91639 19.0843 9.91639 19.6016 10.2508 19.9207L14.8001 24.2608C15.1345 24.5798 15.6771 24.5796 16.0112 24.2608L26.8767 13.8947C27.2112 13.5757 27.2112 13.0584 26.8767 12.7393Z" fill="white"/>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+
+            <div class="input-field">
+                <label class="input-field__label">
+                    MiddleName
+                </label>
+                <div class="input-field__wrapper input-field__wrapper--relative">
+                    <input class="input-field__input" name="middleName" type="text" placeholder="Enter here your middlename" required>
+
+                    <span class="input-field__icon">
+                        <svg width="35" height="36" viewBox="0 0 35 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.5" width="35" height="35" rx="10" fill="#FF9900"/>
+                            <path d="M26.8767 12.7393C26.5423 12.4202 26.0001 12.4202 25.6656 12.7393L19.3494 18.7652C17.142 20.8712 13.6694 20.8712 11.4619 18.7653C11.1275 18.4462 10.5853 18.4462 10.2508 18.7653C9.91639 19.0843 9.91639 19.6016 10.2508 19.9207L14.8001 24.2608C15.1345 24.5798 15.6771 24.5796 16.0112 24.2608L26.8767 13.8947C27.2112 13.5757 27.2112 13.0584 26.8767 12.7393Z" fill="white"/>
+                        </svg>
+                    </span>
+
+                    <div class="input-field__text-error">
+                        Invalid value!
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-field">
+                <label class="input-field__label">
+                    Age
+                </label>
+                <div class="input-field__wrapper input-field__wrapper--relative">
+                    <input class="input-field__input input-field__input--type-number" name="age" type="number" min="1" max="6" placeholder="Enter here your age">
+                    <button type="button" class="input-field__button input-field__button--up">
+                        Up
+                    </button>
+                    <button type="button" class="input-field__button input-field__button--down">
+                        Down
+                    </span>
+                </div>
+            </div>
+
+            <div class="input-field">
+                <label class="input-field__label">
+                    Email
+                </label>
+                <div class="input-field__wrapper">
+                    <input class="input-field__input input-field__input--email" name="email" type="email" placeholder="Enter here your email">
+                </div>
+            </div>
+            
+            <div class="input-field">
+                <label class="input-field__label">
+                    Password
+                </label>
+                <div class="input-field__wrapper">
+                    <input class="input-field__input input-field__input--read-only" name="password" type="password" value="12345678" readonly>
+                </div>
+            </div>
+
+            <!-- <input type="file"> -->
+
+            <select name="type" class="select">
+                <option value="test">
+                    Test
+                </option>
+                <option value="test">
+                    Test 1
+                </option>
+            </select>
+            <textarea class="textarea" name="description" id="" cols="30" rows="10">
+
+            </textarea>
+
+            <div class="checkbox">
+                <input class="checkbox__input" id="pickles" type="checkbox">
+                <label class="checkbox__label" for="pickles">
+                    <span class="checkbox__check">
+                        <svg class="checkbox__svg" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 4L5.5 7.5L11 1" stroke="black" stroke-width="3"/>
+                        </svg>
+                    </span>
+                    <span class="checkbox__text">
+                        A lot of pickles A lot of pickles A lot of pickles A lot of pickles A lot of pickles A lot of pickles A lot of pickles A lot of pickles 
+                    </span>                        
+                </label>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>

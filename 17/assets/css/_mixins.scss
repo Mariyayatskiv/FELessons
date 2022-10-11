@@ -1,0 +1,19 @@
+@mixin container {
+    max-width: calc(1190px / 1400px * 100%);
+    margin: 0 auto;
+
+    @media screen and (max-width: $mobile) {
+        margin: 0 15px;
+        max-width: unset;
+    }
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flex-end {
+    display: flex;
+    align-items: end;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 18</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="body">
+    <main>
+        <picture>
+            <source media="(max-width: 320px)" type="image/webp" srcset="assets/images/cat-576.webp">
+            <source media="(max-width: 768px)" type="image/webp" srcset="assets/images/cat-1024.webp">
+            <source media="(min-width: 769px)" type="image/webp" srcset="assets/images/cat.webp">
+            <img src="assets/images/cat.jpeg" alt="cat">
+        </picture>
+
+
+        <img srcset="
+                assets/images/cat-576.jpeg 300w, 
+                assets/images/cat-1024.jpeg 340w, 
+                assets/images/cat.jpeg 570w" 
+            src="assets/images/cat.jpeg" 
+            sizes="
+                (max-width: 320px) 300px,
+                (max-width: 768px) 340px,
+                570px"
+            alt="cat">
+
+        <img srcset="
+                assets/images/cat-576.jpeg 0.5x, 
+                assets/images/cat-1024.jpeg 0.75x, 
+                assets/images/cat.jpeg 1x,
+                assets/images/cat-1920.jpeg 1.5x,
+                assets/images/cat-2048.jpeg 2x" 
+            src="assets/images/cat.jpeg" 
+            alt="cat">
+    </main>
+
+
+    <div>
+        <div class="container">
+            <div>
+                <h2></h2>
+                <div>
+                    <picture>
+                        <source media="(max-width: 320px)" type="image/webp" srcset="assets/images/cat-576.webp">
+                        <source media="(max-width: 768px)" type="image/webp" srcset="assets/images/cat-1024.webp">
+                        <source media="(min-width: 769px)" type="image/webp" srcset="assets/images/cat.webp">
+                        <img src="assets/images/cat.jpeg" alt="cat">
+                    </picture>
+
+                    <img src="assets/images/cat.jpeg" alt="">
+                </div>
+            </div>
+            <div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
