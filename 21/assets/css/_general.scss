@@ -1,0 +1,57 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+html {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+
+.block {
+    @include generalBlock(green);
+    // background-color: red;
+    @include text($fw: 700);
+
+    &__title {
+        @include title;
+    }
+}
+
+.section {
+    @include generalBlock(red, 10px 10px 0 0, 10px, 0);
+    @include text($fw: 500);
+    @include link;
+}
+
+.about-me {
+    display: inline-flex;
+    padding: 100px;
+
+    // @media screen and (max-width: $tablet) {
+    //     display: block;
+    //     padding: 10px;
+    // }
+
+    // @media screen and (max-width: $mobile) {
+    //     display: none;
+    // }
+
+    @include media($tablet) {
+        display: block;
+        padding: 10px;
+    }
+
+    @include media($mobile) {
+        display: none;
+    }
+}
+
+.title {
+    @include title(3);
+}

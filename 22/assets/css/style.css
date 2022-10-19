@@ -1,0 +1,48 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+html {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.header {
+  height: 50px;
+  background-color: black;
+}
+
+.width {
+  height: 100px;
+  margin-bottom: 20px;
+  background-color: aquamarine;
+}
+.width--cat {
+  background-image: url("../images/cat.png");
+}
+.width--dog {
+  background-image: url("../images/dog.png");
+}
+.width--lion {
+  background-image: url("../images/lion.png");
+}
+.width--sheep {
+  background-image: url("../images/sheep.png");
+}
+.width--111 {
+  background-color: #111;
+}
+.width--898 {
+  background-color: #898;
+}
+.width--333 {
+  background-color: #333;
+}
+.width--black {
+  background-color: #000;
+}/*# sourceMappingURL=style.css.map */

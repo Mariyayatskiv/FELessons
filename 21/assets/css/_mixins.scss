@@ -1,0 +1,95 @@
+@mixin generalBlock($bg, $valuePadding: 30px, $tabletPadding: 20px, $mobilePadding: 5px) {
+    height: 200px;
+    background-color: $bg;
+    padding: $valuePadding;
+
+    @media screen and (max-width: 768px) {
+        padding: $tabletPadding;
+    }
+
+    @media screen and (max-width: 320px) {
+        padding: $mobilePadding
+    }
+}
+
+@mixin text($red: red, $fw) {
+    font-weight: $fw;
+    font-size: 16px;
+    line-height: 26px;
+    @include name($red);
+    @include flex-vertical-center;
+}
+
+@mixin flex-vertical-center {
+    display: flex;
+    align-items: center;
+}
+
+@mixin name($color) {
+    color: $color;
+}
+
+@mixin media($screen) {
+    @media screen and (max-width: $screen) {
+       @content;
+    }
+}
+
+@mixin title($line: 0) {
+    @if($line > 5) {
+        font-size: 66px;
+        line-height: 100px;
+    } @else if ($line <= 0) {
+        font-size: 16px;
+        line-height: 10px;
+    } @else {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    @if($line > 5) {
+        font-size: 66px;
+        line-height: 100px;
+    }
+
+    @if ($line <= 0) {
+        font-size: 16px;
+        line-height: 10px;
+    }
+
+    @if(($line < 5) or ($line > 0)) {
+        font-size: 36px;
+        line-height: 40px;
+    }
+}
+
+@mixin link {
+    color: $red;
+    font-size: 16px;
+    line-height: 20px;
+
+    &:hover {
+        color: green;
+    }
+
+    &:focus {
+        color: black;
+    }
+
+    &:active {
+        color: purple;
+    }
+}
+
+@mixin paddingOrMargin($height, $width) {
+    @if($width > 100px) {
+        padding: 0;
+
+        @if($height < 20px) {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    } @else {
+        padding: 100px
+    }
+}

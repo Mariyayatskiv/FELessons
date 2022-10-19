@@ -1,0 +1,7 @@
+@mixin name {
+    @if(input:checked) {
+        background-color: black;
+    } @else {
+        background-color: aqua;
+    }
+}   

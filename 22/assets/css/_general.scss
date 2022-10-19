@@ -1,0 +1,53 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+html {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.header {
+    height: 50px;
+    @include name;
+}
+
+.width {
+    height: 100px;
+    margin-bottom: 20px;
+    background-color: aquamarine;
+
+    // &--1 {
+    //     width: 10px
+    // }
+
+    // &--2 {
+    //     width: 20px;
+    // }
+
+    // @for $i from -1 through 8 {
+    //     &--#{$i} {
+    //         animation-delay: .3s * $i;
+    //     }
+    // }
+
+    @each $animal in cat, dog, lion, sheep {
+        &--#{$animal} {
+            background-image: url("../images/#{$animal}.png");
+            // color: '#'+$animal;
+            // background-image: url("../images/cat.png");
+        }
+    }
+
+
+    @each $key, $value in $colors {
+        &--#{$key} {
+            background-color: $value;
+        }
+    }
+}
