@@ -1,0 +1,32 @@
+.visible-el {
+    background-color: aquamarine;
+    height: 120vh;
+}
+
+.hidden-el {
+    background-color: aqua;
+    height: 10vh;
+}
+
+li {
+    list-style: none;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    display: none;
+    /* opacity: 0; */
+    background-color: aqua;
+}
+
+.content-block {
+    padding: 30px;
+    background-color: red;
+}
+
+.content-block .slick-prev {
+    left: 0;
+}
+
+.swiper {
+    min-height: 300px;
+}
